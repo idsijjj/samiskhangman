@@ -10,21 +10,15 @@ const resultText = document.getElementById("result-text");
 //Options values for buttons
 let options = {
   fruits: [
-    "Apple",
-    "Blueberry",
-    "Mandarin",
-    "Pineapple",
-    "Pomegranate",
-    "Watermelon",
+    "beana",
+    "eadni",
+    "ihkku",
+    "disdat",
+    "guovdageaidnu",
+    "beavdi",
   ],
-  animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
-  countries: [
-    "India",
-    "Hungary",
-    "Kyrgyzstan",
-    "Switzerland",
-    "Zimbabwe",
-    "Dominica",
+  animals: ["bussa", "boaccu", "gussa", "loddi"],
+ 
   ],
 };
 
