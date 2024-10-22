@@ -9,15 +9,15 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-  fruits: [
+  eallit: [
     "beana",
-    "eadni",
-    "ihkku",
-    "disdat",
-    "guovdageaidnu",
+    "gussa",
+    "spidni",
+    "loddi",
+    "heasta",
     "beavdi",
   ],
-  animals: ["bussa", "boaccu", "gussa", "loddi"],
+  summal: ["guovdageaidnu", "eadni", "beavdi", "Čahcebohtal","biembu"],
  
   ],
 };
@@ -30,7 +30,7 @@ let chosenWord = "";
 
 //Display option buttons
 const displayOptions = () => {
-  optionsContainer.innerHTML += `<h3>Please Select An Option</h3>`;
+  optionsContainer.innerHTML += `<h3>valje ovtta</h3>`;
   let buttonCon = document.createElement("div");
   for (let value in options) {
     buttonCon.innerHTML += `<button class="options" onclick="generateWord('${value}')">${value}</button>`;
@@ -127,7 +127,7 @@ const initializer = () => {
         drawMan(count);
         //Count==6 because head,body,left arm, right arm,left leg,right leg
         if (count == 6) {
-          resultText.innerHTML = `<h2 class='lose-msg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+          resultText.innerHTML = `<h2 class='lose-msg'>don vuoitohallet!!</h2><p>satni lei<span>${chosenWord}</span></p>`;
           blocker();
         }
       }
@@ -228,6 +228,6 @@ const drawMan = (count) => {
   }
 };
 
-//New Game
+//spille okti vel
 newGameButton.addEventListener("click", initializer);
 window.onload = initializer;
